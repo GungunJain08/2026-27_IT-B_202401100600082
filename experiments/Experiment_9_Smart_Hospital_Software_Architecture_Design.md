@@ -8,7 +8,7 @@
 **Deliverable**: System Architecture Diagrams (Layered, Client-Server, Microservices) and Design Patterns Catalogue  
 **Industry Mapping**: Architectural Thinking, Structural Patterns, Cloud-Native System Design  
 **Team Details**: 4 Collaborators (Team Project)  
-**Contributor**: Gungun Jain (Roll No: `202401100600082`, `gungunjn08@gmail.com`)  
+**Contributor**: Rajan Verma (Roll No: `202401100600136`, `rajanverma192021@gmail.com`)  
 
 ---
 
@@ -666,5 +666,5 @@ The Software Architecture Design for the **Smart Hospital Management System (SHM
 
 - **Course**: Software Design Principles (SDP)
 - **Team**: 4 Members Collaborating via GitHub
-- **Contributor**: Gungun Jain (Roll No: `202401100600082`, `gungunjn08@gmail.com`)
+- **Contributor**: Rajan Verma (Roll No: `202401100600136`, `rajanverma192021@gmail.com`)
 - **Scope Handled**: Session 9 / Experiment 9 — Complete Software Architecture Design covering Layered Architecture, Client-Server Architecture, Microservices Architecture (Conceptual), Design Patterns Catalogue (MVC, Repository, Facade, Observer, Strategy, Singleton), Architectural Quality Attribute Analysis, SRS Traceability Matrix, and Draw.io Tool Procedures for the Smart Hospital Management System.
