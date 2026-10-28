@@ -1,0 +1,39 @@
+sequenceDiagram
+    actor Patient
+    participant Portal as Patient Portal
+    participant Auth as Amazon Cognito
+    participant API as API Gateway
+    participant Booking as Test Booking Service
+    participant DB as Amazon RDS
+    participant Notify as SNS/SES Notification Service
+
+    Patient->>Portal: Sign in
+    Portal->>Auth: Authenticate credentials
+    Auth-->>Portal: Access token
+    Portal-->>Patient: Dashboard
+    Patient->>Portal: View recommended tests
+    Portal->>API: GET /patients/me/recommended-tests + token
+    API->>Booking: Invoke authorized service
+    Booking->>DB: Fetch patient's recommended tests
+    DB-->>Booking: Test list
+    Booking-->>API: Test list
+    API-->>Portal: 200 OK
+    Portal-->>Patient: Display tests
+    Patient->>Portal: Select test and slot
+    Portal->>API: POST /bookings
+    API->>Booking: Validate request
+    Booking->>DB: Check recommendation and slot
+    DB-->>Booking: Validation result
+    alt Valid and available
+        Booking->>DB: Save booking
+        DB-->>Booking: Booking ID
+        Booking->>Notify: Publish confirmation event
+        Notify-->>Patient: Booking confirmation
+        Booking-->>API: Booking created
+        API-->>Portal: 201 Created
+        Portal-->>Patient: Show confirmation
+    else Invalid or unavailable
+        Booking-->>API: Validation error
+        API-->>Portal: 400/409
+        Portal-->>Patient: Show error and retry option
+    end
