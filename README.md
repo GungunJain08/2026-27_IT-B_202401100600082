@@ -80,6 +80,21 @@ Patient Portal          Staff / Admin Portal
 | [Name 2] | Test Booking | Booking API (view recommended tests, book/cancel slot), patient-side booking UI, booking confirmation notifications |
 | [Name 3] | Reminders & Admin Dashboard | EventBridge scheduling, SNS/SES integration, reminder API, staff/admin dashboard UI |
 
+## Lab Sessions & Design Deliverables
+
+The software engineering and design process for the Smart Hospital Management System is formally documented across standardized laboratory sessions:
+
+| Session | Lab Deliverable | Focus Area / Industry Mapping | Documentation Link |
+|---|---|---|---|
+| **Session 2** | Problem Identification & Feasibility Analysis | Feasibility Analysis & Problem Definition | [`Experiment 2`](file:///home/gunnu/Desktop/2026-27_IT-B_202401100600082/experiments/Experiment_2_Smart_Hospital_Management_System_Solved.docx) |
+| **Session 3** | Stakeholder Elicitation & Requirement Gathering | Requirement Elicitation & User Stories | [`Experiment 3`](file:///home/gunnu/Desktop/2026-27_IT-B_202401100600082/experiments/Experiment_3_Smart_Hospital_Requirement_Gathering.md) |
+| **Session 4** | Software Requirements Specification (SRS) | IEEE 830 Specification & Analysis Modeling | [`Experiment 4`](file:///home/gunnu/Desktop/2026-27_IT-B_202401100600082/experiments/Experiment_4_Smart_Hospital_Management_System_SRS.md) |
+| **Session 5** | UML Use Case Modeling & Narratives | Requirement Modeling (StarUML / Draw.io) | [`Experiment 5`](file:///home/gunnu/Desktop/2026-27_IT-B_202401100600082/experiments/Experiment_5_Smart_Hospital_Use_Case_Modeling.md) |
+| **Session 6** | UML Class Diagram Design | Object-Oriented System Design (StarUML / Draw.io) | [`Experiment 6`](file:///home/gunnu/Desktop/2026-27_IT-B_202401100600082/experiments/Experiment_6_Smart_Hospital_Class_Diagram_Design.md) |
+| **Session 7** | UML Sequence & Activity Diagram Modeling | Interaction & Workflow Modeling | *Upcoming* |
+| **Session 8** | Software Design Principles Report | Coupling, Cohesion & Modularization | *Upcoming* |
+| **Session 9** | System Architecture Design & Design Patterns | Microservices & Layered Architecture | *Upcoming* |
+
 ## Project Structure
 
 ```text
